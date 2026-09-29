@@ -25,6 +25,8 @@ jobs:
           coverage: none
       - name: Install dependencies
         run: |
+          # Old Laravel majors carry published advisories; allow them here only so we can test compatibility.
+          composer config policy.advisories.block false
           composer require "illuminate/support:${{ matrix.laravel }}" "illuminate/console:${{ matrix.laravel }}" "illuminate/notifications:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
           composer update --prefer-dist --no-interaction --no-progress
       - name: Run tests
