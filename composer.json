@@ -1,0 +1,33 @@
+{
+    "name": "connectmedia/laravel",
+    "description": "Laravel integration for the Connect Media SMS API: send bulk and transactional SMS and SMS notifications to Safaricom, Airtel and Telkom in Kenya.",
+    "type": "library",
+    "keywords": ["laravel", "sms", "bulk sms", "notifications", "notification channel", "kenya", "safaricom", "airtel", "connect media"],
+    "homepage": "https://connectmedia.co.ke/developers/",
+    "license": "MIT",
+    "authors": [{ "name": "Connect Media", "email": "info@connectmedia.co.ke", "homepage": "https://connectmedia.co.ke/" }],
+    "support": { "email": "info@connectmedia.co.ke", "docs": "https://connectmedia.co.ke/developers/", "issues": "https://github.com/connectmedia-ke/connectmedia-laravel/issues" },
+    "require": {
+        "php": "^8.1",
+        "connectmedia/sms": "^10.0",
+        "illuminate/console": "^10.0|^11.0|^12.0",
+        "illuminate/notifications": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": { "psr-4": { "ConnectMedia\\Laravel\\": "src/" } },
+    "autoload-dev": { "psr-4": { "ConnectMedia\\Laravel\\Tests\\": "tests/" } },
+    "extra": {
+        "laravel": {
+            "providers": ["ConnectMedia\\Laravel\\ConnectMediaServiceProvider"],
+            "aliases": { "ConnectMedia": "ConnectMedia\\Laravel\\Facades\\ConnectMedia" }
+        }
+    },
+    "scripts": { "test": "phpunit" },
+    "config": { "sort-packages": true },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
