@@ -27,7 +27,7 @@ CONNECTMEDIA_API_KEY=your-64-character-api-key
 CONNECTMEDIA_SENDER=YourBrand
 ```
 
-Get an API key by creating a free account at [dashboard.connectmedia.co.ke](https://dashboard.connectmedia.co.ke/) and generating one under **Profile, then API keys**. Your sender ID must be registered first; see [sender IDs](https://connectmedia.co.ke/sender-id/).
+Get an API key by creating a free account at [app.connectmedia.co.ke](https://app.connectmedia.co.ke/) and generating one under **Profile, then API keys**. Your sender ID must be registered first; see [sender IDs](https://connectmedia.co.ke/sender-id/).
 
 Check everything works:
 
